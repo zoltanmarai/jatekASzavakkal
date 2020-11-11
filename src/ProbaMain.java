@@ -13,6 +13,7 @@ import java.util.Scanner;
 
         public static void logIn() throws FileNotFoundException{
             Scanner sc = new Scanner(System.in);
+            Scanner scPath=new Scanner(System.in);
             int menuSzam;
             do {
 
@@ -33,12 +34,13 @@ import java.util.Scanner;
 
                 switch (menuSzam) {
                     case 1:
-                       Szemantika1.readFile();
+                       Szemantika1.readFile("00659.txt");
                         break;
 
                     case 2:
-
-                        //valami
+                        System.out.println("adja meg az eleresi utvonalat a sajat fajlnak!");
+                        String path= scPath.nextLine();
+                        Szemantika1.readFile(path);
                         break;
 
                     case 3:
@@ -51,7 +53,8 @@ import java.util.Scanner;
                         //akarmi
                         break;
 
-
+                    default:
+                        break;
                 }
 
             } while (menuSzam != 0);
