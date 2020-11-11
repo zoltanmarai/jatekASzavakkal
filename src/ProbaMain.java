@@ -20,23 +20,21 @@ import java.util.Scanner;
                 System.out.println();
                 System.out.println(" legyen kedves valasztani az alabbi menupontok kozul: ");
                 System.out.println();
-                System.out.println("Szemantikai elemzes - beepitett referencia szoveggel:  ---> 1");
-                System.out.println();
-                System.out.println("Szemantikai elemzes - sajat referencia szoveggel:  ---> 2");
-
-                System.out.println("bullshit generator   ---> 3");
-                System.out.println();
-                System.out.println("bullshit generator - sajat referencia szoveggel:  ---> 4");
+                System.out.println("Szemantikai elemzes - beepitett referencia szoveggel:   ---> 1");
+                System.out.println("Szemantikai elemzes - sajat referencia szoveggel:       ---> 2");
+                System.out.println("bullshit generator                                      ---> 3");
+                System.out.println("bullshit generator - sajat referencia szoveggel:        ---> 4");
 
                 System.out.println();
-                System.out.println(" kilepes:  ---> 0");
+                System.out.println(" kilepes:                                               ---> 0");
+                System.out.println();
 
                 menuSzam = sc.nextInt();
 
                 switch (menuSzam) {
                     case 1:
                        Szemantika1.readFile();
-                        continue;
+                        break;
 
                     case 2:
 
@@ -53,12 +51,11 @@ import java.util.Scanner;
                         //akarmi
                         break;
 
-                    default:
 
-                        //default eset
                 }
 
-            } while (menuSzam == 0);
+            } while (menuSzam != 0);
+            sc.nextInt();
             System.out.println("goooodbye");
 
     }
