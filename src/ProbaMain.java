@@ -58,7 +58,7 @@ import java.util.Scanner;
                 }
 
             } while (menuSzam != 0);
-            sc.nextInt();
+           // sc.nextInt();
             System.out.println("goooodbye");
 
     }
