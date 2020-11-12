@@ -1,4 +1,5 @@
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -46,7 +47,7 @@ import java.util.Scanner;
 
                     case 3:
 
-                        //to write
+                        Mondatgenerator.mondatKeszito(Szemantika1.first10());
                         break;
 
                     case 4:
