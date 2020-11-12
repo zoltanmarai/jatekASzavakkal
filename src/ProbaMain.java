@@ -46,13 +46,19 @@ import java.util.Scanner;
                         break;
 
                     case 3:
-
-                        Mondatgenerator.mondatKeszito(Szemantika1.first10());
+                        System.out.println("Add meg a mondat szavainak a számát:");
+                        int num = sc.nextInt();
+                        Szemantika1.readFile("00659.txt");
+                        Mondatgenerator.mondatKeszito(Szemantika1.first10(),num);
                         break;
 
                     case 4:
-
-                        //akarmi
+                        System.out.println("adja meg az eleresi utvonalat a sajat fajlnak!");
+                        path= scPath.nextLine();
+                        Szemantika1.readFile(path);
+                        System.out.println("Add meg a mondat szavainak a számát:");
+                        num = sc.nextInt();
+                        Mondatgenerator.mondatKeszito(Szemantika1.first10(),num);
                         break;
 
                     default:
